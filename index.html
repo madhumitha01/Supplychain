@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Warehouse Supplychain</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#157878" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/madhu.css" />
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Warehouse Supply Chain</h1>
+      <h2 class="project-tagline">Backend- MySQL and Frontend- Javascript</h2>
+
+      <h5>
+        <a
+          id="user-content-header-4"
+          class="anchor"
+          href="#header-4"
+          aria-hidden="true"
+          ><span class="octicon octicon-link"></span></a
+        >By- Madhumitha Rajinikanthan
+      </h5>
+      <a href="https://madhumitha01.github.io/" class="btn">Home Page</a>
+      <a
+        href="https://github.com/madhumitha01/Warehouse-Supplychain"
+        class="btn"
+        >View on GitHub</a
+      >
+    </section>
+
+    <section class="main-content">
+      <pre><code>This project was done in the year 2018, in the 5th sem of Computer Science Engineering.</code></pre>
+      <p>
+        The WAREHOUSE SUPPLY CHAIN is a web based system, designed for a
+        production sector, which gives information related to the customers and
+        the product details they ordered. This product develops a system that
+        can be used by the company management to keep track of all the sales,
+        vendors and its customers. It automates the communication between all
+        these 3 sectors.
+      </p>
+
+      <p>
+        This project has been developed to override the problems prevailing in
+        the practicing manual system. This software is supported to eliminate
+        and in some cases reduce the hardships faced by the existing system.
+        Moreover this system is designed for the particular need of the company
+        to carry out operations in a smooth and effective manner.
+      </p>
+
+      <p>
+        The main objective of the project is to find out the supply chain
+        management system. Supply chain is a lengthy process. Basically their
+        supply chain is totally ware-house based. In supply chain, at first they
+        store the entire product from different manufacturer in their warehouse.
+        The transportation cost is totally taken care by the warehouse company.
+        Then the stored products are distributed through their own vehicles to
+        its several outlets. There is no intermediary between warehouse and
+        manufacturing company. No product directly comes to the outlet without
+        the hands of warehouse.
+      </p>
+
+      <blockquote>
+        <p>The other objectives include:</p>
+
+        <p>• To gather practical knowledge of supply chain management.</p>
+
+        <p>
+          • Reduce manpower and manual paper works for maintaining the records
+          offline.
+        </p>
+        <p>• Maintain the accuracy, integrity and consistency of the data.</p>
+        <p>
+          • To maintain all the products, customers, employees, vendors and
+          orders details in one database.
+        </p>
+      </blockquote>
+
+      <h1>
+        <a
+          id="user-content-header-1"
+          class="anchor"
+          href="#header-1"
+          aria-hidden="true"
+          ><span class="octicon octicon-link"></span></a
+        >DATABASE ASSUMPTIONS
+      </h1>
+
+      <p>
+        A warehouse basically has 4 important elements: products, transporters,
+        orders and suppliers. Each element must be tracked based on its location
+        and quantity. The product on hand is updated by tracking incoming
+        shipments and outgoing orders. Order alerts can be set to trigger when
+        inventory levels fall below custom-defined minimum levels.
+      </p>
+
+      <h4>
+        <a
+          id="user-content-header-4"
+          class="anchor"
+          href="#header-4"
+          aria-hidden="true"
+          ><span class="octicon octicon-link"></span></a
+        >It is listed as below:
+      </h4>
+
+      <ul class="task-list">
+        <li>
+          A warehouse has goods that are either supplied by some supplier or can
+          be delivered to the customers.
+        </li>
+        <li>
+          Every good has a unique article id, description of the good,
+          denomination of quantity (DOQ), cost per piece and total cost (cost
+          per piece*quantity).
+        </li>
+        <li>
+          One good can belong to maximum two transactions (one of the supplier
+          to the warehouse and other one to the customer from warehouse) and one
+          transaction can involve one or many goods.
+        </li>
+        <li>
+          Transaction has details like order number, consignee name, date,
+          quantity and transaction value.
+        </li>
+        <li>
+          Goods are sent to warehouse by one or many suppliers and a supplier or
+          indent can send one or many goods to the warehouse.
+        </li>
+        <li>
+          Every indent has a unique supplier id, name, DOQ, quantity, cost per
+          piece and amount.
+        </li>
+        <li>
+          A customer has a unique customer id, mobile no., address, DOQ,
+          quantity and amount.
+        </li>
+        <li>
+          Goods can be sent to customers from the warehouse with its transaction
+          information (ternary).
+        </li>
+        <li>
+          A vehicle has a unique vehicle no., driver name, date of registration,
+          date of incorporation, insurance and expiry date.
+        </li>
+        <li>
+          A vehicle has a unique vehicle no., driver name, date of registration,
+          date of incorporation, insurance and expiry date.
+        </li>
+        <li>
+          A transporter can have one or many vehicles but each vehicle belongs
+          to only one transporter.
+        </li>
+      </ul>
+      <pre><code>SCHEMA OF THE DATABASE</code></pre>
+      <a href="#!"> <img src="Capture5.JPG" alt="Project" /> </a>
+      <h1>
+        <a
+          id="user-content-header-1"
+          class="anchor"
+          href="#header-1"
+          aria-hidden="true"
+          ><span class="octicon octicon-link"></span></a
+        >SYSTEM ANALYSIS
+      </h1>
+
+      <ol class="task-list">
+        <li>
+          The system runs on apache server. So it’s needed that the server must
+          have an apache server version 2.0 available.
+        </li>
+        <li>
+          MySQL database has been used for storing the data of the website.
+        </li>
+        <li>
+          HTML has been used for creating the layout of the web application.
+        </li>
+        <li>CSS has been used for creating and designing of the webpage.</li>
+      </ol>
+      <h4>
+        <a
+          id="user-content-header-4"
+          class="anchor"
+          href="#header-4"
+          aria-hidden="true"
+          ><span class="octicon octicon-link"></span></a
+        >Hardware Interface
+      </h4>
+
+      <table>
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>Processor</td>
+            <td>- Intel Core i5</td>
+          </tr>
+          <tr>
+            <td>Speed</td>
+            <td>- 1.8 GHz</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>- 256 MB</td>
+          </tr>
+          <tr>
+            <td>Hard Disk</td>
+            <td>- 10 GB</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>
+        <a
+          id="user-content-header-4"
+          class="anchor"
+          href="#header-4"
+          aria-hidden="true"
+          ><span class="octicon octicon-link"></span></a
+        >Software Interface
+      </h4>
+
+      <table>
+        <thead></thead>
+        <tbody>
+          <tr>
+            <td>Operating System</td>
+            <td>- Windows 7</td>
+          </tr>
+          <tr>
+            <td>Database</td>
+            <td>- MySQL</td>
+          </tr>
+          <tr>
+            <td>Scripting Language</td>
+            <td>- Javascript/td></td>
+          </tr>
+        </tbody>
+      </table>
+      <h1>
+        <a
+          id="user-content-header-1"
+          class="anchor"
+          href="#header-1"
+          aria-hidden="true"
+          ><span class="octicon octicon-link"></span></a
+        >SNAPSHOTS
+      </h1>
+      <pre><code>1) HOME PAGE</code></pre>
+      <a href="#!"> <img src="Capture1.JPG" alt="Project" /> </a>
+      <pre><code>2) TABLE DISPLAY</code></pre>
+      <a href="#!"> <img src="Capture2.JPG" alt="Project" /> </a>
+      <pre><code>3) INSERT COMMAND PAGE</code></pre>
+      <a href="#!"> <img src="Capture.JPG" alt="Project" /> </a>
+      <pre><code>4) UPDATE COMMAND PAGE</code></pre>
+      <a href="#!"> <img src="Capture4.JPG" alt="Project" /> </a>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"
+          ><a href="https://github.com/madhumitha01/">Warehouse Supplychain</a>
+          is maintained by
+          <a href="https://github.com/madhumitha01">Madhumitha Rajinikanthan</a
+          >.</span
+        >
+      </footer>
+    </section>
+  </body>
+</html>
